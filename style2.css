@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: "Fredoka";
+  src: url(Fredoka-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+  font-family: "CedarvilleCursive";
+  src: url(CedarvilleCursive-Regular.ttf);
+}
+
+/*Background*/
+body{
+  background-image: url(media/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-color: white;
+}
+
+ html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/*navigation*/
+.navbar {
+  width: 100%;
+  position: static;
+  top: 0;
+  left: 0;
+  padding: 15px 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: light;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: light;
+  font-size: 16px;
+}
+
+.navbar img {
+  width: 40px;
+  height:40px;
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+}
+
+/*next page*/
+
+.textcase11{
+position: relative;
+display: inline-block;
+margin-top: 160px;
+}
+
+.maintext11{
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Pacifico", cursive;
+  color: rgb(150, 179, 245);
+  font-size: 70px;
+  text-align: center;
+  animation: pop 5s ease-in-out infinite;
+  text-shadow: 1px;
+}
+
+@keyframes pop{
+0%{
+color: rgb(150, 179, 245)
+}
+50%{
+color: rgb(245, 142, 204);
+}
+100%{
+color: rgb(150, 179, 245)
+}
+}
+
+.subtext11{
+margin-top: 5%;
+text-align: center;
+margin-left: 3%;
+text-align: justify;
+font-family: "Fredoka"; 
+}
+.collage1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.textbox2{
+display: flex; 
+align-items: center; 
+gap: 20px; 
+flex: 1;
+width: 50%;
+margin-left: 2%;
+margin-top: -8%;
+}
+
+
+video{
+width: 40%;
+height: auto; 
+display: block;
+padding-right: 3%;
+border-radius: 3px;
+}
+
+.vidbox1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+margin-top: 10%;
+}
